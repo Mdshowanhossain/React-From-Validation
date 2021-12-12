@@ -11,13 +11,11 @@ const Form = () => {
 
   const onSubmit = (data) => {
     setUserInfo(data);
-    console.log(data);
   };
-  console.log(errors);
   return (
     <>
       <div className="form_container">
-        <div className="form_wraper">
+        <div className="form_wrapper">
           <div className="form_input_wrapper">
             <pre className="form_pre">
               {JSON.stringify(userInfo, undefined, 2)}
