@@ -1,6 +1,7 @@
 .form_container {
   background-color: #787f8a;
   width: 100%;
+  padding: 1rem 2rem;
 }
 .form_pre {
   color: var(--pink-color);
@@ -36,7 +37,6 @@ input {
 .input_title {
   margin-bottom: 0.4rem;
   color: var(--text-color);
-  /* color: red; */
 }
 
 .username,
@@ -60,4 +60,32 @@ input {
 }
 .err_message {
   color: var(--pink-color);
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 20rem;
+    padding: 0.7rem 0.7rem;
+    font-size: 1rem;
+  }
+  .username,
+  .email,
+  .password {
+    margin: 1rem 0rem;
+  }
+
+  .input_title {
+    margin-bottom: 0.2rem;
+  }
+  .form_input_wrapper {
+    width: 25rem;
+    padding: 2rem 2rem;
+  }
+
+  .submit_btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    margin-top: 0.1rem;
+    width: 20rem;
+  }
 }
